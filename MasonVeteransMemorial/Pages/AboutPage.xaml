@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:custom="clr-namespace:MasonVeteransMemorial.Controls;assembly=MasonVeteransMemorial"
+              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" ios:Page.UseSafeArea="true"
+              x:Class="MasonVeteransMemorial.Pages.AboutPage">
+    <ContentPage.Content>
+     <ScrollView>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Spacing="0">
+            <BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                     Style="{StaticResource TopPageDividerStyle}" BackgroundColor="{StaticResource DefaultBorderColor}" />
+                
+            <StackLayout VerticalOptions="Start" HeightRequest="65" Padding="0,5,0,5"
+                         BackgroundColor="White">
+                <Image Source="Full_Color_Gradient_Preferred_with_Tagline_large" HeightRequest="55" VerticalOptions="CenterAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnLogoClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </StackLayout>
+            <StackLayout Margin="10,10,10,10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                            <Frame Padding="0" Margin="0,0,10,10">
+                            <StackLayout BackgroundColor="#EEEEEE" Margin="0" Padding="0">
+                                <Image Source="memorial_info_image_2" WidthRequest="140"/>
+                                <Label Margin="3" FontSize="10" Text="Neil Armstrong" HorizontalOptions="Center" VerticalOptions="Center"  HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+                            </StackLayout>
+                             </Frame>
+                    <Label TextColor="#333333" FontSize="12" Text="The Mason Veterans Memorial was dedicated on Saturday, November 8, 2003. Over 1000 people, including at least 150 veterans, attended the event. The late Neil Armstrong, a Korean War veteran and the first man to walk on the moon, was the guest of honor. He was introduced by Congressman Rob Portman (U.S. House of Representatives, Second District) and spoke briefly about the history of aviation in armed conflicts in the United States." Margin="0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                    <Label TextColor="#333333" FontSize="12" Text="In addition to Mr. Armstrong, Colonel Michael J. Belzil, Commander of the 88th Air Base Wing at Wright-Patterson Air Force also spoke. The significance of the poem by Lonna Kingsbury. At the head of the memorial, a flag proudly waves above a wall depicting the five branches of the service: Air Force, Army, Coast Guard, Marines, and Navy. At the base of the wall and around the flag are memorial bricks for veterans. These and other bricks to the sides of the memorial were purchased by citizens to help pay for its construction." Margin="0"/>
+                    <Frame Padding="0" Margin="10,0,0,10">
+                        <StackLayout BackgroundColor="#EEEEEE" Margin="0" Padding="0">
+                            <Image Source="memorial_info_image_3" WidthRequest="100" VerticalOptions="Start" Aspect="AspectFill"/>
+                            <Label Margin="3" FontSize="10" Text="Raising the flag at the dedication ceremony" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Vertical">
+                    <Label TextColor="#333333" FontSize="12" Text="The main feature of the memorial is a set of 10 pillars representing the 10 major conflicts in American history. The height of each pillar is proportional to the number of casualties in the war. At the end of the row is a low stone representing the hope for peace and the end to casualties in war." Margin="0"/>
+                    <Frame Padding="0" Margin="0,10,0,10">
+                        <StackLayout BackgroundColor="#EEEEEE" Margin="0" Padding="0">
+                            <Image Source="Veterans_Memorial_Pillars" WidthRequest="160" VerticalOptions="Start" Aspect="AspectFill"/>
+                            <Label Margin="3" FontSize="10" Text="The pillars" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
+                    <StackLayout Orientation="Vertical">
+                        <Frame Padding="0" Margin="0,10,10,10">
+                        <StackLayout BackgroundColor="#EEEEEE" Margin="0" Padding="0">
+                            <Image Source="memorial_info_image_6" WidthRequest="100" VerticalOptions="Start" Aspect="Fill"/>
+                            <Label Margin="3" FontSize="10" Text="Tribute to the five branches of the armed forces" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+                        </StackLayout>
+                        </Frame>
+                        <Label TextColor="#333333" FontSize="12" Text="An eternal flame at the lower end of the memorial will burn until all prisoners of war and missing in action are returned to American soil. It stands in front of a wall of tears that represents the sorrows of all those affected by war." Margin="0"/>
+                    </StackLayout>        
+                    <Frame Padding="0" Margin="0,10,0,10">
+                        <StackLayout BackgroundColor="#EEEEEE" Margin="0" Padding="0">
+                            <Image Source="memorial_info_image_5" WidthRequest="150" VerticalOptions="Start" Aspect="AspectFill"/>
+                            <Label Margin="3" FontSize="10" Text="The eternal flame" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+                        </StackLayout>
+                    </Frame>
+
+                </StackLayout>
+                </Grid>
+                    
+            </StackLayout>
+        </StackLayout>
+            </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

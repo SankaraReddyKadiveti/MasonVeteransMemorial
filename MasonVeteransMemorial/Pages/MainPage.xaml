@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:custom="clr-namespace:MasonVeteransMemorial.Controls;assembly=MasonVeteransMemorial"
+              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+              xmlns:effect="clr-namespace:MasonVeteransMemorial.Effects" ios:Page.UseSafeArea="true" x:Class="MasonVeteransMemorial.Pages.MainPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Spacing="0">
+            <BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Start"
+                     Style="{StaticResource TopPageDividerStyle}" BackgroundColor="{StaticResource DefaultBorderColor}" />
+            <StackLayout VerticalOptions="Start" HeightRequest="65" Padding="0,5,0,5"
+                         BackgroundColor="White">
+                <Image Source="Full_Color_Gradient_Preferred_with_Tagline_large" HeightRequest="55" VerticalOptions="CenterAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnLogoClicked" />
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout>
+                <Image Aspect="AspectFit" Source="veterans_memorial_015_90" HorizontalOptions="FillAndExpand"
+                       VerticalOptions="Start" />
+                <StackLayout Padding="20, 15, 20, 0" Spacing="6">
+                    <Label Text="Welcome to the Mason Veterans Memorial" Style="{StaticResource TitleLabelStyle}" HorizontalTextAlignment="Center"
+                           HorizontalOptions="FillAndExpand" VerticalOptions="Start" LineBreakMode="WordWrap" />
+                    <Label Text="Dedicated November 8, 2003" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                           VerticalOptions="Start" LineBreakMode="WordWrap" FontAttributes="None">
+                        <Label.FontSize>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="iOS">15</On>
+                                <On Platform="Android">14</On>
+                            </OnPlatform>
+                        </Label.FontSize>
+                    </Label>
+                </StackLayout>
+                <StackLayout Padding="20, 15, 20, 0" Spacing="3" x:Name="slAddress">
+                    <Label Text="The memorial is located in front of the Mason Municipal Center at:" HorizontalTextAlignment="Center"
+                            HorizontalOptions="FillAndExpand" VerticalOptions="Start" LineBreakMode="WordWrap"
+                           FontAttributes="None">
+                        <Label.FontSize>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="iOS">15</On>
+                                <On Platform="Android">14</On>
+                            </OnPlatform>
+                        </Label.FontSize>
+                    </Label>
+                    <Label Text="6000 Mason Montgomery Road" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                           Style="{StaticResource LinkLabelStyle}" VerticalOptions="Start" LineBreakMode="WordWrap"
+                           FontAttributes="None">
+                        <Label.FontSize>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="iOS">15</On>
+                                <On Platform="Android">14</On>
+                            </OnPlatform>
+                        </Label.FontSize>
+                        <Label.Effects>
+                            <effect:UnderlineEffect />
+                        </Label.Effects>
+                    </Label>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="Mason, OH 45040" HorizontalTextAlignment="Center" HorizontalOptions="FillAndExpand"
+                               Style="{StaticResource LinkLabelStyle}" VerticalOptions="Start" LineBreakMode="WordWrap"
+                               FontAttributes="None">
+                            <Label.FontSize>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="iOS">15</On>
+                                    <On Platform="Android">14</On>
+                                </OnPlatform>
+                            </Label.FontSize>
+                            <Label.Effects>
+                                <effect:UnderlineEffect />
+                            </Label.Effects>
+                        </Label>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Padding="10, 5, 10, 20" Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button x:Name="btnDonate" Text="Donate" BackgroundColor="{StaticResource HeadingTextColor}"
+                            TextColor="White" BorderWidth="0" BorderRadius="7"
+                            HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="70" Clicked="OnDonateButtonClicked" />
+
+                    <Button x:Name="btn3DTour" Text="3D Tour" BackgroundColor="{StaticResource HeadingTextColor}"
+                            TextColor="White" BorderWidth="0" BorderRadius="7"
+                            HorizontalOptions="Center" VerticalOptions="Center"  WidthRequest="70" Clicked="On3DTourButtonClicked" />
+                </StackLayout>
+        
+            </StackLayout>
+        </StackLayout>
+       </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

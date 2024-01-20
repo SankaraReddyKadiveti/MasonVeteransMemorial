@@ -1,0 +1,123 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasonVeteransMemorial", "MasonVeteransMemorial\MasonVeteransMemorial.csproj", "{18FBBE50-DA03-475E-98A9-BF5E88A210FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasonVeteransMemorial.iOS", "iOS\MasonVeteransMemorial.iOS.csproj", "{7B03344A-A48F-43EC-98A5-98F1E43B4A27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasonVeteransMemorial.Droid", "Droid\MasonVeteransMemorial.Droid.csproj", "{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Debug|x86.Build.0 = Debug|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Release|iPhone.Build.0 = Release|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Release|x86.ActiveCfg = Release|Any CPU
+		{18FBBE50-DA03-475E-98A9-BF5E88A210FD}.Release|x86.Build.0 = Release|Any CPU
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Debug|iPhone.Build.0 = Debug|iPhone
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Debug|x86.ActiveCfg = Debug|iPhone
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Debug|x86.Build.0 = Debug|iPhone
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Release|Any CPU.Build.0 = Release|iPhone
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Release|iPhone.ActiveCfg = Release|iPhone
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Release|iPhone.Build.0 = Release|iPhone
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Release|x86.ActiveCfg = Release|iPhoneSimulator
+		{7B03344A-A48F-43EC-98A5-98F1E43B4A27}.Release|x86.Build.0 = Release|iPhoneSimulator
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Debug|x86.ActiveCfg = Debug|x86
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Debug|x86.Build.0 = Debug|x86
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Debug|x86.Deploy.0 = Debug|x86
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Release|iPhone.Build.0 = Release|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Release|x86.ActiveCfg = Release|x86
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Release|x86.Build.0 = Release|x86
+		{F759650F-AB71-44E2-B8D6-F71A3AD7E2CB}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFB609B8-FD9B-4266-ADCF-5F84295570E3}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = PrefixedHierarchical
+		$0.TextStylePolicy = $14
+		$2.inheritsSet = null
+		$2.scope = application/xaml+xml
+		$0.XmlFormattingPolicy = $15
+		$3.inheritsSet = null
+		$3.scope = application/xaml+xml
+		$4.FileWidth = 150
+		$4.TabsToSpaces = True
+		$4.IndentWidth = 3
+		$4.scope = application/xml
+		$5.DefaultFormat = $6
+		$6.MaxAttributesPerLine = 3
+		$6.WrapAttributes = True
+		$6.AlignAttributes = True
+		$5.scope = application/xml
+		$7.FileWidth = 80
+		$7.TabsToSpaces = True
+		$7.scope = text/plain
+		$8.inheritsSet = null
+		$8.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $9
+		$9.scope = text/x-csharp
+		$10.inheritsSet = null
+		$10.scope = text/x-json
+		$0.JSONFormattingPolicy = $11
+		$11.AutoStructureCompletion = True
+		$11.BracePositions = SemiExpanded
+		$11.FormatOnPaste = True
+		$11.scope = text/x-json
+		$12.inheritsSet = null
+		$12.scope = text/x-web
+		$13.inheritsSet = null
+		$13.scope = text/x-vs
+		$14.inheritsSet = null
+		$14.scope = application/vnd.apple-xcode-storyboard
+		$15.inheritsSet = null
+		$15.scope = application/vnd.apple-xcode-storyboard
+	EndGlobalSection
+EndGlobal

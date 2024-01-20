@@ -1,0 +1,88 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+   <PackageReference Include="Crashlytics" Version="1.5.0" />
+   <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.60.1" />
+    <PackageReference Include="Fabric" Version="1.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="New\" />
+    <Folder Include="Pages\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="BusinessServices\" />
+    <Folder Include="Controls\" />
+    <Folder Include="Data\" />
+    <Folder Include="BusinessServices\Base\" />
+    <Folder Include="BusinessServices\Services\" />
+    <Folder Include="BusinessServices\DependencyServiceInterfaces\" />
+    <Folder Include="BusinessServices\CommonUtils\" />
+    <Folder Include="NativeImplementations\" />
+    <Folder Include="Effects\" />
+    <Folder Include="Controls\SkiaSharp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controls\CarouselData.cs" />
+    <Compile Remove="BusinessServices\Models\SimpleResponse.cs" />
+    <Compile Remove="Controls\SkiaSharp\MainPage2.xaml.cs" />
+    <Compile Remove="Controls\SimpleSlideShowScroller.xaml.cs" />
+    <Compile Remove="Controls\SimpleSlideShowViewer.xaml.cs" />
+    <Compile Remove="Data\AboutMemorialSlideShow.cs" />
+    <Compile Remove="Data\MemorialInfoSlideShow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\SearchPage.xaml.cs">
+      <DependentUpon>SearchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\MemorialMapPage.xaml.cs">
+      <DependentUpon>MemorialMapPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\SimpleSlidesViewer.xaml.cs">
+      <DependentUpon>SimpleSlideShowViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Controls\SkiaSharp\SkiaToolsPage.xaml.cs">
+      <DependentUpon>SkiaToolsPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Data\Brick_Spreadsheet.csv" />
+    <None Remove="Data\LatestBrickData.csv" />
+    <None Remove="Data\H_smaller_rotated.png" />
+    <None Remove="Data\drone_pu_20_building_grounds_view.png" />
+    <None Remove="Data\drone_pu_4_overhead_view.png" />
+    <None Remove="Data\BackgroundGrass.png" />
+    <None Remove="Data\mason_background_2.png" />
+    <None Remove="Data\MemorialBricks.csv" />
+    <None Remove="Data\overhead_1161x425.png" />
+    <None Remove="Data\background_for_blur.png" />
+    <None Remove="Data\initial_startup_grounds.png" />
+    <None Remove="Data\mason_background_2_90.png" />
+    <None Remove="Data\overhead_medium.png" />
+    <None Remove="Data\drone_pu_4_overhead_90.png" />
+    <None Remove="Data\overhead_600x220.png" />
+    <None Remove="Data\initial_startup_grounds_v2_620.png" />
+    <None Remove="Data\drone_pu_4_overhead_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Controls\SkiaSharp\MainPage2.xaml" />
+    <EmbeddedResource Remove="Controls\SimpleSlideShowViewer.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\mason_background_2.png" />
+    <EmbeddedResource Include="Data\MemorialBricks.csv" />
+    <EmbeddedResource Include="Data\overhead_1161x425.png" />
+    <EmbeddedResource Include="Data\background_for_blur.png" />
+    <EmbeddedResource Include="Data\initial_startup_grounds.png" />
+    <EmbeddedResource Include="Data\mason_background_2_90.png" />
+    <EmbeddedResource Include="Data\overhead_medium.png" />
+    <EmbeddedResource Include="Data\drone_pu_4_overhead_90.png" />
+    <EmbeddedResource Include="Data\overhead_600x220.png" />
+    <EmbeddedResource Include="Data\initial_startup_grounds_v2_620.png" />
+    <EmbeddedResource Include="Data\drone_pu_4_overhead_view.png" />
+  </ItemGroup>
+</Project>
